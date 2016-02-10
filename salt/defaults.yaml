@@ -11,6 +11,8 @@ salt:
   api_service: salt-api
   syndic_service: salt-syndic
 
+  minion_version: 2015.8.0
+
   salt_master: salt-master
   salt_minion: salt-minion
   salt_syndic: salt-syndic

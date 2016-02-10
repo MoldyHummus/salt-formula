@@ -4,6 +4,7 @@ salt-minion:
 {% if salt_settings.install_packages %}
   pkg.installed:
     - name: {{ salt_settings.salt_minion }}
+	- version: {{ salt_settings.salt_minion_version }}
 {% endif %}
   file.recurse:
     - name: {{ salt_settings.config_path }}/minion.d
